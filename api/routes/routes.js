@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(app) {
     var todoList = require('../controllers/controller.js');
   
@@ -7,7 +8,7 @@ module.exports = function(app) {
   
   
     app.route('/posts/:postId')
-      //.get(todoList.read_a_post)
+      .get(todoList.read_a_post)
       //.put(todoList.update_a_post)
-      //.delete(todoList.delete_a_post);
+      .delete(todoList.delete_a_post);
   };

@@ -1,4 +1,3 @@
-
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -6,11 +5,9 @@ var Schema = mongoose.Schema;
 var PostSchema = new Schema({
   title: {
     type: String,
-    required: 'Kindly enter the title of the post'
   },
   body: {
     type: String,
-    required: 'Kindly enter the body of the post'
   },
   Created_date: {
     type: Date,
